@@ -48,6 +48,8 @@ func main() {
 			log.Fatalln("Not able to accept the connection")
 
 		}
+
+		// Send to connection handler :: Compute
 		go echo(conn)
 
 	}
