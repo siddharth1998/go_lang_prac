@@ -6,10 +6,10 @@
 For server side
 
 ```console
-go run tcpProxy.go
+go run $(pwd)/tcpProxy/tcpProxy.go
 ```
 
-Create a simple http.server from python, where you have some files
+Create a simple http.server from python, where you have some files this will act like 
 
 ``` console
 python -m http.server 10000
