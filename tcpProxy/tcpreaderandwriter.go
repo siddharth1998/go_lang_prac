@@ -40,6 +40,6 @@ func main(){
 	s, err= writer.Write(input)
 	if err!= nil{
 		log.Fatalln("Unable to write to output")
-	}
+	} 
 	fmt.Printf("Wrote %d bytes to stdout \n",s)
 }
