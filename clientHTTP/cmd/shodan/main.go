@@ -19,4 +19,13 @@ func main(){
 		"Query Credits: %d\nScan Credits: %d\n\n",
 		api_info.QueryCredits,
 		api_info.ScanCredits)
+	
+	hostSearch,err :=client.HostSearch(os.Args[1])
+	if err!=nil{
+		fmt.Println("there is some problem in host search ")
+		fmt.Println(err)
+	}
+	for _,host:= range hostSearch.Matches{
+		fmt.Printf("\n %18s:: %8d \n",host.IPString,host.Port)
+	}
 }
