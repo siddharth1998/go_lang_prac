@@ -38,3 +38,10 @@ Now just run the main.go in the cmd shodan( please remember the parent directory
 go run main.go
 ```
  </details>
+
+ <details>
+ <summary>Querying Shodan</summary>
+ ```console
+ go run main.go flask 
+ ```
+ </details>
